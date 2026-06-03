@@ -1,6 +1,17 @@
-Jogo de Adivinhação
+# 🎮 Jogo de Adivinhação
 
-## O que aprendi:
+Um jogo simples onde o usuário tenta adivinhar um número de 1 a 10.
+
+## 🚀 Tecnologias
+- HTML
+- JavaScript
+
+## 🎯 Funcionalidades
+- Número aleatório
+- Dicas (alto/baixo)
+- Limite de tentativas
+
+## 📚 Aprendizados
 - Condições (if/else)
-- Interação com usuário
-- Lógica básicagir
+- Manipulação do DOM
+- Lógica de programação

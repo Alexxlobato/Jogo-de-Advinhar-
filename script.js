@@ -1,5 +1,5 @@
-// Fase 1: Configuração Inicial do Jogo
-let numeroSecreto = 7;
+// Fase 1: Configuração Inicial do Jogo 
+let numeroSecreto = Math.floor(Math.random() * 10) + 1; 
 let tentativasRestantes = 3;
 
 function verificar() {
@@ -37,3 +37,6 @@ function verificar() {
     document.getElementById("palpite").value = "";
 }
 
+function recarregarPagina() {
+    location.reload();
+}

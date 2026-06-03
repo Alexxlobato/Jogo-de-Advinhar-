@@ -25,7 +25,8 @@ body {
 
   /* REGRAS PARA DEIXAR O TAMANHO FIXO */
   width: 480px; /* Garante que a largura nunca vai mudar */
-  min-height: 250px; /* Permite crescer se necessário sem cortar conteúdo */
+  height: 320px;       /* MUDADO: Altura totalmente travada */
+  position: relative;  /* ADICIONADO: Base para o texto absoluto */
 }
 
 /* Estilo do campo de texto (Input) */
@@ -52,9 +53,12 @@ button {
 }
 
 p {
-  margin-top: 25px; /* Ajuste para espaçamento equilibrado */
-  margin-bottom: 15px; /* Mantém um espaço confortável entre as linhas */
-  font-size: 18px; /* Deixa a leitura um pouco maior e mais clara */
+    font-size: 18px;
+    position: absolute;  /* ADICIONADO: O texto não empurra mais os outros elementos */
+    left: 0;             /* ADICIONADO: Centraliza o bloco do texto à esquerda */
+    right: 0;            /* ADICIONADO: Centraliza o bloco do texto à direita */
+    bottom: 95px;        /* ADICIONADO: Distância do texto em relação ao fundo do container */
+    margin: 0 auto;      /* ADICIONADO: Garante a centralização perfeita do texto */
 }
 
 h1 {
@@ -77,4 +81,14 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
   appearance: textfield;
+}
+
+/* Botão Reiniciar Fixo no Fundo */
+.btn-reiniciar {
+    position: absolute;   /* Flutua dentro do container */
+    bottom: 25px;         /* Distância fixa de 25px do fundo do container */
+    left: 50%;            /* Move o botão para o meio da largura */
+    transform: translateX(-50%); /* Garante a centralização horizontal perfeita */
+    margin: 0;            /* Remove margens antigas que possam desalinhá-lo */
+    width: 150px;         /* Opcional: define um tamanho fixo para o botão */
 }
