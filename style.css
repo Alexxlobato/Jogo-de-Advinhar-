@@ -92,3 +92,41 @@ input[type="number"] {
     margin: 0;            /* Remove margens antigas que possam desalinhá-lo */
     width: 150px;         /* Opcional: define um tamanho fixo para o botão */
 }
+
+/* Estilo padrão do botão (quando está ativo) */
+#btnEnviar {
+  background-color: #4CAF50; /* Verde */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Suaviza a mudança de cor */
+}
+
+/* Estilo automático para quando o botão estiver BLOQUEADO */
+#btnEnviar:disabled {
+  background-color: #cccccc; /* Cinza claro */
+  color: #666666;            /* Texto cinza escuro */
+  cursor: not-allowed;       /* Muda o ponteiro do mouse para um sinal de bloqueio */
+  opacity: 0.7;              /* Deixa o botão levemente transparente */
+}
+
+/* Estilo padrão do campo de texto (quando está ativo) */
+#palpite {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Estilo automático para quando o campo estiver BLOQUEADO */
+#palpite:disabled {
+  background-color: #f5f5f5; /* Fundo cinza bem claro */
+  color: #888888;            /* Texto cinza */
+  border-color: #dddddd;     /* Borda mais clara */
+  cursor: not-allowed;       /* Ponteiro do mouse com sinal de proibido */
+}
